@@ -1,7 +1,11 @@
 package christmas;
 
+import camp.nextstep.edu.missionutils.Console;
+import christmas.Order.Order;
+
 public class Application {
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        Order order = new Order();
+        order.start();
     }
 }
