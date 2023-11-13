@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class InputView {
     private static final String DATE ="^(?:[1-9]|[12]\\d|3[0-1])$";
     public int inputDate() {
-        String stringDate = Console.readLine();
+        String stringDate = Console.readLine().trim();
         if(stringDate.matches(DATE)) {
             System.out.println(stringDate);
             return Integer.parseInt(stringDate);}
