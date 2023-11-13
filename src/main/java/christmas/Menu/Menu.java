@@ -19,8 +19,7 @@ public enum Menu {
     final private String menuName;
     final private int type;
     final private int price;
-    private static final Map<String, Menu> menuMap = new HashMap<>();
-    static {for(Menu menu : Menu.values()) menuMap.put(menu.getMenuName(), menu);}
+
     Menu(String menuName, int type, int price) {
         this.type = type;
         this.menuName = menuName;
@@ -28,7 +27,5 @@ public enum Menu {
     }
     public String getMenuName() {return menuName;}
     public int getPrice() {return price;}
-    public static Menu getMainMenu(String menuName){return menuMap.get(menuName);}
-
     public int getType() {return type;}
 }
