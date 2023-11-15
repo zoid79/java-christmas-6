@@ -14,4 +14,10 @@ public class InputView {
             return Integer.parseInt(stringDate);}
         throw new IllegalArgumentException("[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.");
     }
+
+    public String getOrder() {
+        String order = Console.readLine();
+        System.out.println(order);
+        return order;
+    }
 }
